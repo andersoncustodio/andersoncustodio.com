@@ -1,0 +1,11 @@
+*
+!*/
+
+!/content/**/*
+!/static/**/*
+!/i18n/**/*
+!/README.md
+!/go.mod
+!/go.sum
+!/hugo.yaml
+!/.gitignore
