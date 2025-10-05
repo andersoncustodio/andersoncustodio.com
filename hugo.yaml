@@ -19,12 +19,18 @@ markup:
 
 menu:
   main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: Git
+      pageRef: /git
+      weight: 2
     - name: Unix
       pageRef: /unix
-      weight: 1
+      weight: 2
     - name: Docker
       pageRef: /docker
-      weight: 1
+      weight: 2
     - name: Search
       weight: 4
       params:
