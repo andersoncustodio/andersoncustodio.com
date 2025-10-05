@@ -1,0 +1,47 @@
+title: Anderson Custódio
+defaultContentLanguage: "pt-br"
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+services:
+  googleAnalytics:
+    ID: G-YQZFKHXTY7
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Unix
+      pageRef: /unix
+      weight: 1
+    - name: Docker
+      pageRef: /docker
+      weight: 1
+    - name: Search
+      weight: 4
+      params:
+        type: search
+
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logos/andersoncustodio-logo.svg
+      dark: images/logos/andersoncustodio-logo-dark.svg
+      link: /
+      width: 130
+      height: 37
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
