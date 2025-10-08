@@ -10,9 +10,9 @@ O arquivo `.gitignore` é utilizado para especificar quais arquivos ou diretóri
 Isso é útil para evitar que arquivos temporários, arquivos de configuração local, dependências geradas automaticamente
 e outros arquivos desnecessários sejam incluídos no repositório.
 
-É possível utilizar múltiplos arquivos `.gitignore` em diferentes diretórios do projeto. As regras definidas 
-em cada arquivo `.gitignore` serão aplicadas apenas aos arquivos e diretórios contidos no mesmo diretório e 
-seus subdiretórios. No entanto, a prática mais comum é manter um único arquivo `.gitignore` na raiz do 
+É possível utilizar múltiplos arquivos `.gitignore` em diferentes diretórios do projeto. As regras definidas
+em cada arquivo `.gitignore` serão aplicadas apenas aos arquivos e diretórios contidos no mesmo diretório e
+seus subdiretórios. No entanto, a prática mais comum é manter um único arquivo `.gitignore` na raiz do
 repositório para gerenciar todas as exclusões de forma centralizada.
 
 ## Sintaxe
@@ -84,28 +84,30 @@ as regras de exclusão específicas para essa ferramenta no arquivo `.git/info/e
 `.gitignore` compartilhado.
 
 ## Modo White-list
-Uma abordagem alternativa ao modo de exclusão é o modo de lista branca (white-list), onde você especifica
-explicitamente quais arquivos ou diretórios devem ser rastreados pelo Git, ignorando todos os outros.
+Uma abordagem alternativa ao modo "padrão" de exclusão é o modo white-list, onde você especifica
+quais arquivos ou diretórios devem ser rastreados pelo Git, ignorando todos os outros.
 
-Podemos dizer que o modo white-list é uma abordagem de como configuramos o `.gitignore` para incluir apenas
-os arquivos e diretórios que queremos rastrear, não é necessariamente algum tipo de extensão ou funcionalidade
-adicional do Git.
+O modo white-list é uma abordagem de como configuramos o `.gitignore` para incluir apenas  os arquivos e diretórios que
+queremos rastrear, não é necessariamente algum tipo de extensão ou funcionalidade  adicional do Git.
 
 Para deixarmos o `.gitignore` em modo white-list, ele precisa apenas começar com as seguintes linhas:
 
 ```sh
-# Ignorar todos os arquivos por padrão
+# Ignorar tudo por padrão
 *
 
 # Não ignorar diretórios
 !*/
 ```
 
-A primeira linha `*` instrui o Git a ignorar todos os arquivos por padrão, enquanto a segunda linha `!*/`
-garante que os diretórios não sejam ignorados, permitindo que possamos incluir arquivos específicos dentro
-deles.
+A primeira linha de instrução com `*` ignora tudo de forma global, e a segunda com `!*/` garante que os diretórios
+não sejam ignorados, veja que a segunda regra é específica para os diretórios, todos os arquivos ainda serão ignorados.
 
-Em seguida, podemos adicionar regras para negar a exclusão de arquivos ou diretórios específicos que queremos rastrear.
+O `!*/` é o ponto-chave para o modo white-list, sem ele não iríamos conseguir incluir nenhum arquivo dentro de outros
+diretórios, como dito anteriormente, todos os arquivos continuam sendo ignorados, em seguida temos que escrever regras
+específicas para cada um dos arquivos ou diretórios que queremos rastrear.
+
+Exemplos de regras para incluir arquivos ou diretórios específicos que queremos rastrear:
 ```sh
 # Incluir arquivos específicos
 !README.md
