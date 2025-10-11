@@ -87,28 +87,33 @@ as regras de exclusão específicas para essa ferramenta no arquivo `.git/info/e
 Uma abordagem alternativa ao modo "padrão" de exclusão é o modo white-list, onde você especifica
 quais arquivos ou diretórios devem ser rastreados pelo Git, ignorando todos os outros.
 
-O modo white-list é uma abordagem de como configuramos o `.gitignore` para incluir apenas  os arquivos e diretórios que
-queremos rastrear, não é necessariamente algum tipo de extensão ou funcionalidade  adicional do Git.
+O modo white-list é uma abordagem de como instruimos o `.gitignore` a funcionar, não é necessariamente algum tipo de
+extensão ou funcionalidade adicional.
 
-Para deixarmos o `.gitignore` em modo white-list, ele precisa apenas começar com as seguintes linhas:
+Para deixarmos o `.gitignore` no modo white-list, ele precisa apenas começar com as seguintes linhas:
 
 ```sh
-# Ignorar tudo por padrão
 *
-
-# Não ignorar diretórios
 !*/
 ```
 
-A primeira linha de instrução com `*` ignora tudo de forma global, e a segunda com `!*/` garante que os diretórios
-não sejam ignorados, veja que a segunda regra é específica para os diretórios, todos os arquivos ainda serão ignorados.
+O que cada linha faz:
+- `*` ignora tudo e de forma global, ou seja, todos os arquivos e diretórios serão ignorados.
+- `!*/` é o ponto-chave para o modo white-list funcionar corretamente, sem ele não iríamos conseguir incluir nenhum 
+  arquivo dentro de outros diretórios, nós estamos dizendo para o Git não ignorar o diretório, mas continuamos a ignorar
+  todos os arquivos dentro dele.
 
-O `!*/` é o ponto-chave para o modo white-list, sem ele não iríamos conseguir incluir nenhum arquivo dentro de outros
-diretórios, como dito anteriormente, todos os arquivos continuam sendo ignorados, em seguida temos que escrever regras
-específicas para cada um dos arquivos ou diretórios que queremos rastrear.
+A segunda linha pode parecer um pouco confusa, é importante entender que, embora o Git de fato rastreie apenas
+arquivos, podemos definir as regras por diretórios, quando usamos o `*` estamos barrando todos os arquivos e
+diretórios, quando fazemos `!*/` estamos sobrescrevendo apenas a regra global para ignorar os diretórios, mas não os
+arquivos dentro deles.
 
-Exemplos de regras para incluir arquivos ou diretórios específicos que queremos rastrear:
+Dessa forma, podemos criar regras mais específicas de como queremos rastrear:
 ```sh
+# Modo white-list
+*
+!*/
+
 # Incluir arquivos específicos
 !README.md
 
