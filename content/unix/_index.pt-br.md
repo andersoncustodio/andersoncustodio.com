@@ -12,6 +12,6 @@ Este seção contém dicas e truques relacionados ao sistema operacional Unix e 
 ## Explore
 
 {{< cards >}}
-{{< card link="/unix/atalhos-terminal/" title="Atalhos no terminal" icon="terminal" >}}
-{{< card link="/unix/comandos/" title="Comandos" icon="book-open" >}}
+{{< card link="/pt-br/unix/atalhos-terminal/" title="Atalhos no terminal" icon="terminal" >}}
+{{< card link="/pt-br/unix/comandos/" title="Comandos" icon="book-open" >}}
 {{< /cards >}}

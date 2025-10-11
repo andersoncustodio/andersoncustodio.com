@@ -1,0 +1,5 @@
+# Redirecionarmento provisório para reeindexação do site em português
+/git/*  /pt-br/git/:splat  301
+/docker/*  /pt-br/docker/:splat  301
+/unix/*  /pt-br/unix/:splat  301
+/  /pt-br/  301

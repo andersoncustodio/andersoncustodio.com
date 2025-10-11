@@ -13,5 +13,5 @@ Esta seção contém dicas e truques relacionados ao Docker, uma plataforma popu
 ## Explore
 
 {{< cards >}}
-{{< card link="/docker/dicas-de-imagens-uteis-container-docker" title="Dicas de Imagens Úteis de Container Docker" icon="cube" >}}
+{{< card link="/pt-br/docker/dicas-de-imagens-uteis-container-docker" title="Dicas de Imagens Úteis de Container Docker" icon="cube" >}}
 {{< /cards >}}

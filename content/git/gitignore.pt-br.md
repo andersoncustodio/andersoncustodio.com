@@ -2,7 +2,7 @@
 title: Gerenciando o Rastreamento de Arquivos com .gitignore
 linkTitle: .gitignore
 type: docs
-prev: /git/
+prev: /git
 ---
 
 O arquivo `.gitignore` é utilizado para especificar quais arquivos ou diretórios devem ser ignorados pelo Git.

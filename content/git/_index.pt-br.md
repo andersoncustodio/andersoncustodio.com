@@ -2,6 +2,7 @@
 title: Git
 type: docs
 toc: false
+next: /git/gitignore
 sidebar:
   open: true
 ---
@@ -12,5 +13,5 @@ utilizado no desenvolvimento de software.
 ## Explore
 
 {{< cards >}}
-{{< card link="gitignore" title=".gitignore" icon="book-open" >}}
+{{< card link="/pt-br/git/gitignore" title=".gitignore" icon="book-open" >}}
 {{< /cards >}}

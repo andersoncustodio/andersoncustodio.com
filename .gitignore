@@ -9,3 +9,4 @@
 !/go.sum
 !/hugo.yaml
 !/.gitignore
+!/_redirects

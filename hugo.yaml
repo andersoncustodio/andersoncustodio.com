@@ -1,5 +1,11 @@
 title: Anderson Custódio
-defaultContentLanguage: "pt-br"
+languages:
+  en:
+    languageName: English
+    weight: 1
+  pt-br:
+    languageName: Português (Brasil)
+    weight: 2
 
 module:
   imports:
@@ -43,7 +49,6 @@ params:
     logo:
       path: images/logos/andersoncustodio-logo.svg
       dark: images/logos/andersoncustodio-logo-dark.svg
-      link: /
       width: 130
       height: 37
 

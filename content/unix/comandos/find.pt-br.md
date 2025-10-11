@@ -1,6 +1,7 @@
 ---
 title: find - Procurar arquivos e diretórios
 description: 'Utilizando o comando `find` para procurar arquivos e diretórios no Linux ou MacOS'
+prev: /unix/comandos
 type: docs
 ---
 
