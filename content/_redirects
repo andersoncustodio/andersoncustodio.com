@@ -7,5 +7,5 @@
 /unix/*  /pt-br/unix/:splat  301
 
 /pt-br/unix/comandos/* /pt-br/unix/commands/:splat  301
-/pt-br/unix/terminal-shortcuts/ /pt-br/unix/terminal-shortcuts/  301
+/pt-br/unix/atalhos-terminal/ /pt-br/unix/terminal-shortcuts/  301
 /pt-br/docker/dicas-de-imagens-uteis-container-docker /pt-br/docker/tips-images-container  301
