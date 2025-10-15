@@ -1,7 +1,7 @@
 ---
 title: Docker
 type: docs
-next: /docker/dicas-de-imagens-uteis-container-docker
+next: /docker/tips-images-container
 toc: false
 sidebar:
   open: true
@@ -13,5 +13,5 @@ Esta seção contém dicas e truques relacionados ao Docker, uma plataforma popu
 ## Explore
 
 {{< cards >}}
-{{< card link="/pt-br/docker/dicas-de-imagens-uteis-container-docker" title="Dicas de Imagens Úteis de Container Docker" icon="cube" >}}
+{{< card link="/pt-br/docker/tips-images-container" title="Dicas de Imagens Úteis de Container Docker" icon="cube" >}}
 {{< /cards >}}

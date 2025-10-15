@@ -1,7 +1,6 @@
 ---
 title: Dicas de Imagens Úteis de Container Docker
 type: docs
-url: /pt-br/docker/dicas-de-imagens-uteis-container-docker
 ---
 
 ## Redis

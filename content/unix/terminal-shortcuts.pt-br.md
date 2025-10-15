@@ -2,7 +2,7 @@
 title: Atalhos no terminal
 type: docs
 prev: /unix/
-next: /unix/comandos/
+next: /unix/commands/
 ---
 
 Dicas de atalhos que você pode utilizar nos termais Unix.

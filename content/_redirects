@@ -1,5 +1,11 @@
 # Redirecionarmento provisório para reeindexação do site em português
+/  /pt-br/  301
+/br/* /pt-br/:splat  301
+
 /git/*  /pt-br/git/:splat  301
 /docker/*  /pt-br/docker/:splat  301
 /unix/*  /pt-br/unix/:splat  301
-/  /pt-br/  301
+
+/pt-br/unix/comandos/* /pt-br/unix/commands/:splat  301
+/pt-br/unix/terminal-shortcuts/ /pt-br/unix/terminal-shortcuts/  301
+/pt-br/docker/dicas-de-imagens-uteis-container-docker /pt-br/docker/tips-images-container  301
